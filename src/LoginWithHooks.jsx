@@ -1,13 +1,15 @@
 import React, { useReducer, useEffect, useRef } from 'react';
-import { verifyLogin } from './utils';
+import { verifyLogin, user } from './utils';
 
 const initialState = {
   username: '',
   password: '',
   isLoading: false,
   isLoggedIn: false,
-  error: ''
+  error: '',
+  team: '',
 };
+var Team ;
 
 function loginReducer(state, action) {
   switch (action.type) {
@@ -29,7 +31,8 @@ function loginReducer(state, action) {
       return {
         ...state,
         isLoggedIn: true,
-        isLoading: false
+        isLoading: false,
+        team: Team
       };
     }
     case 'error': {
@@ -59,15 +62,18 @@ function loginReducer(state, action) {
 
 export default function LoginWithReducer() {
   const [state, dispatch] = useReducer(loginReducer, initialState);
-  const { username, password, isLoading, isLoggedIn, error, isFocused } = state;
+  const { username, password, isLoading, isLoggedIn, error, isFocused ,team } = state;
   const usernameRef = useRef(null);
 
   const handleSubmit = async e => {
+    Team = undefined;
     e.preventDefault();
     dispatch({ type: verifyLogin });
     try {
       await verifyLogin({ username, password });
-      dispatch({ type: 'success' });
+      Team = user()
+      if (Team !== false){
+      dispatch({ type: 'success' });}
     } catch (error) {
       dispatch({ type: 'error' });
     }
@@ -85,6 +91,7 @@ export default function LoginWithReducer() {
         {isLoggedIn ? (
           <>
             <h1>Welcome {username}!</h1>
+            team : {team}<br/>
             <button onClick={() => dispatch({ type: 'logout' })}>
               Log Out
             </button>

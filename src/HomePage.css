@@ -1,0 +1,29 @@
+.homepage {
+    /* background-color: aquamarine; */
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-select {
+    margin: .5rem;
+}
+
+.dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+  }

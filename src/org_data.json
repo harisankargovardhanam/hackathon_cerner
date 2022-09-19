@@ -1,0 +1,164 @@
+[
+    {
+      "id": "org12345",
+      "organisation": "Clinical Charting Dev",
+      "teams": [
+        {
+          "id": "tm123",
+          "name": "Charting Core",
+          "members": [
+            {
+              "id": "11",
+              "name": "Charting Core Admin",
+              "username": "CC Admin"
+            },
+            {
+              "id": "12",
+              "name": "Charting Core Member",
+              "username": "CC Member"
+            }
+          ]
+        },
+        {
+          "id": "tm124",
+          "name": "Charting UI",
+          "members": [
+            {
+              "id": "11",
+              "name": "Charting UI Admin",
+              "username": "CU Admin"
+            },
+            {
+              "id": "12",
+              "name": "Charting UI Member",
+              "username": "CU Member"
+            }
+          ]
+        },
+        {
+          "id": "tm125",
+          "name": "Charting Support",
+          "members": [
+            {
+              "id": "11",
+              "name": "Charting Support Admin",
+              "username": "CC Admin"
+            },
+            {
+              "id": "12",
+              "name": "Charting Support Member",
+              "username": "CS Member"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "org12346",
+      "organisation": "Clinical Doc Dev",
+      "teams": [
+        {
+          "id": "tm126",
+          "name": "Doc Core",
+          "members": [
+            {
+              "id": "11",
+              "name": "Doc Core Admin",
+              "username": "DC Admin"
+            },
+            {
+              "id": "12",
+              "name": "Doc Core Member",
+              "username": "DC Member"
+            }
+          ]
+        },
+        {
+          "id": "tm127",
+          "name": "Doc UI",
+          "members": [
+            {
+              "id": "11",
+              "name": "Doc UI Admin",
+              "username": "DU Admin"
+            },
+            {
+              "id": "12",
+              "name": "Doc UI Member",
+              "username": "DU Member"
+            }
+          ]
+        },
+        {
+          "id": "tm128",
+          "name": "Doc Support",
+          "members": [
+            {
+              "id": "11",
+              "name": "Doc Support Admin",
+              "username": "DS Admin"
+            },
+            {
+              "id": "12",
+              "name": "Doc Support Member",
+              "username": "DS Member"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "org12347",
+      "organisation": "Chart Review Dev",
+      "teams": [
+        {
+          "id": "tm129",
+          "name": "Review core",
+          "members": [
+            {
+              "id": "11",
+              "name": "Review Core Admin",
+              "username": "RC Admin"
+            },
+            {
+              "id": "12",
+              "name": "Review Core Member",
+              "username": "RC Member"
+            }
+          ]
+        },
+        {
+          "id": "tm130",
+          "name": "Review UI",
+          "members": [
+            {
+              "id": "11",
+              "name": "Review UI Admin",
+              "username": "RU Admin"
+            },
+            {
+              "id": "12",
+              "name": "Review UI Member",
+              "username": "RU Member"
+            }
+          ]
+        },
+        {
+          "id": "tm131",
+          "name": "Review Support",
+          "members": [
+            {
+              "id": "11",
+              "name": "Review Support Admin",
+              "username": "RS Admin"
+            },
+            {
+              "id": "12",
+              "name": "Review Support Member",
+              "username": "RS Member"
+            }
+          ]
+        }
+      ]
+    }
+]

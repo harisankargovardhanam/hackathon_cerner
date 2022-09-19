@@ -1,4 +1,5 @@
-import React, { useReducer, useEffect, useRef } from 'react';
+import React, { useReducer, useEffect, useRef, useState } from 'react';
+import HomePage from './HomePage';
 import { verifyLogin } from './utils';
 
 const initialState = {
@@ -81,15 +82,12 @@ export default function LoginWithReducer() {
 
   return (
     <div className="App">
-      <div className="login-container">
         {isLoggedIn ? (
           <>
-            <h1>Welcome {username}!</h1>
-            <button onClick={() => dispatch({ type: 'logout' })}>
-              Log Out
-            </button>
+            <HomePage username={username}/>
           </>
         ) : (
+          <div className="login-container">
           <form className="form" onSubmit={handleSubmit}>
             {error && <p className="error">{error} </p>}
             <p>Please Login!</p>
@@ -123,8 +121,9 @@ export default function LoginWithReducer() {
               {isLoading ? 'Logging In.....' : 'Log In'}
             </button>
           </form>
+          </div>
         )}
-      </div>
+
     </div>
   );
 }
